@@ -18,8 +18,16 @@
         <joint name="joint_5" />
         <joint name="joint_6" />
     </group>
+    <group_state name="all_zero" group="irb140_arm">
+        <joint name="joint_1" value="0" />
+        <joint name="joint_2" value="0" />
+        <joint name="joint_3" value="0" />
+        <joint name="joint_4" value="0" />
+        <joint name="joint_5" value="0" />
+        <joint name="joint_6" value="0" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="endEffector" parent_link="link_6" group="irb140_arm" />
+    <end_effector name="endEffector" parent_link="link_6" group="irb140_arm" parent_group="irb140_arm" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="link_1" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="link_2" reason="Never" />

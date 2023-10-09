@@ -6,6 +6,7 @@
 
   Usage:
     robot_interface_download_irb2400.launch robot_ip:=<value>
+    Esto tiene pinta de problema en el futuro.
 -->
 <launch>
   <arg name="robot_ip" />

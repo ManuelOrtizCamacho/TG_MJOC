@@ -6,37 +6,7 @@
   <!-- get base ABB IRB120 model -->
   <xacro:abb_irb140 prefix="${prefix}" />
 
-  <!-- Gazebo-specific link properties -->
-  <gazebo reference="${prefix}base_link">
-    <material>Gazebo/Orange</material>
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="${prefix}link_1">
-    <material>Gazebo/Orange</material>
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="${prefix}link_2">
-    <material>Gazebo/Orange</material>
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>  
-  <gazebo reference="${prefix}link_3">
-    <material>Gazebo/Orange</material>
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="${prefix}link_4">
-    <material>Gazebo/Orange</material>
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="${prefix}link_5">
-    <material>Gazebo/Orange</material>
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="${prefix}link_6">
-    <material>Gazebo/Black</material>
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-
-  <!-- transmission list -->
+<!-- transmission list -->
   <transmission name="${prefix}tran1">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_1">
@@ -94,6 +64,37 @@
   </transmission>
   <!-- end of transmission list -->
 
+
+  <!-- Gazebo-specific link properties -->
+  <gazebo reference="${prefix}base_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="${prefix}link_1">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="${prefix}link_2">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>  
+  <gazebo reference="${prefix}link_3">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="${prefix}link_4">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="${prefix}link_5">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <gazebo reference="${prefix}link_6">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+  <!-- End of Gazebo-specific link properties -->
   
 
   <!-- ros_control plugin -->

@@ -233,7 +233,7 @@
     
    
   
-    <!-- end of joint list -->
+    <!-- tiene pinta que le falta cosas para manejar en Robotestudio-->
 
     <!-- ROS base_link to ABB World Coordinates transform -->
     <link name="${prefix}base" />

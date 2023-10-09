@@ -28,3 +28,4 @@
   <include file="$(find abb_irb140_gazebo)/launch/irb140_control.launch"/>
 
 </launch>
+<!-- Check -->

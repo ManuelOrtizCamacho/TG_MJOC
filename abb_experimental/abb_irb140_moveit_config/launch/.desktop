@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Link to 
+Type=Link
+URL=file:///home/manuel/catkin_ws/src/abb_experimental/abb_irb120_moveit_config/launch/moveit_planning_execution_gazebo.launch
+Icon=text-plain

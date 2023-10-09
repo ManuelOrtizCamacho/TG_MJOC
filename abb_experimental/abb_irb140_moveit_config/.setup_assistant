@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: abb_irb140_gazebo
+    relative_path: urdf/irb140.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/abb_irb140.srdf
+  CONFIG:
+    author_name: manuel.ortiz
+    author_email: Manuelortiz@hotmail.com
+    generated_timestamp: 1696643030

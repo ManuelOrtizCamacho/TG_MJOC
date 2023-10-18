@@ -15,10 +15,10 @@ def joint_states_callback(data):
     Motor_A = int(round(((joint_1 - (-3.1416)) / (3.1416 - (-3.1416))) * (1023 - 0) + 0))
     # joint2 to MB
     joint_2 = data.position[1] 
-    Motor_B = int(round(((joint_2 - (-1.7453)) / (1.9199 - (-1.7453))) * (1023 - 0) + 0))
+    Motor_B = int(round(((joint_2 - (-1.7453)) / (1.9199 - (-1.6453))) * (1023 - 0) + 0))
     # joint3 to MC
     joint_3 = data.position[2] 
-    Motor_C = int(round(((joint_3 - (-1.0471)) / (1.1345 - (-1.0471))) * (1023 - 0) + 0))
+    Motor_C = int(round(10+((joint_3 - (-1.0471)) / (1.1345 - (-1.0071))) * (1023 - 0) + 0))
     # joint4 to MD
     joint_4 = data.position[3] 
     Motor_D = int(round(((joint_4 - (-3.4900)) / (3.4900 - (-3.4900))) * (1023 - 0) + 0))
